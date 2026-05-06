@@ -11,8 +11,8 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-379-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
-[![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-100-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
+[![Papers](https://img.shields.io/badge/Papers-380-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-101-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
 ## 👋 简介
@@ -7505,6 +7505,7 @@ Framework for Experience-Driven Agent Evolution</strong></td>
 | ToolPipe | 2026-04-17 | ![GitHub Repo stars](https://img.shields.io/github/stars/COSAI-Labs/toolpipe-mcp-server?style=social) | https://github.com/COSAI-Labs/toolpipe-mcp-server<br>https://toolpipe.dev |
 | Origin | 2026-04-19 | ![GitHub Repo stars](https://img.shields.io/github/stars/7xuanlu/origin?style=social) | https://github.com/7xuanlu/origin<br>https://useorigin.app |
 | Omnigraph | 2026-04-22 | ![GitHub Repo stars](https://img.shields.io/github/stars/ModernRelay/omnigraph?style=social) | https://github.com/ModernRelay/omnigraph<br>No official website |
+| Mnemory | 2026-05-03 | ![GitHub Repo stars](https://img.shields.io/github/stars/fpytloun/mnemory?style=social) | https://github.com/fpytloun/mnemory<br>No official website |
 
 ### 🎥 多媒体资源
 

@@ -1948,6 +1948,25 @@ To systematically organize the diverse research and practical resources in the f
           </td>
       </tr>
       <tr>
+        <td rowspan="2" style="width: 15%;">2026-04-18</td>
+        <td style="width: 55%;"><strong>Experience Compression Spectrum: Unifying Memory, Skills, and Rules in LLM Agents</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Memory%20System-blue" alt="Memory System">
+          <img src="https://img.shields.io/badge/Compression-brightgreen" alt="Compression">
+          <img src="https://img.shields.io/badge/Skill%20Discovery-red" alt="Skill Discovery">
+        </td>
+        <td style="width: 15%;"><a href="https://arxiv.org/abs/2604.15877v1">
+          <img src="https://img.shields.io/badge/arXiv-Paper-%23D2691E?logo=arxiv" alt="Paper Badge">
+        </a></td>
+      </tr>
+      <tr>
+          <td colspan="3">
+              • 将 agent memory、skill discovery 和 rule learning 统一为经验压缩的不同层级，定义压缩函数 C_L 将轨迹映射到 L0-L3 层级的知识（原始轨迹 → 情景记忆 → 程序性技能 → 陈述性规则）。<br>
+              • 揭示 memory 和 skill 社区深度割裂，22 篇核心论文中交叉引用率低于 1%（共 1136 条引用），提出全谱 agent 学习系统自适应选择压缩粒度。<br>
+              • 优化目标包括减少 context 消耗、降低 retrieval latency、提高跨任务/跨模型/跨场景迁移能力；工作流遵循新问题→memory、重复模式→skill、跨场景原则→rule 的循环模式。
+          </td>
+      </tr>
+      <tr>
         <td rowspan="2" style="width: 15%;">2026-04-03</td>
         <td style="width: 55%;"><strong>Poison Once, Exploit Forever: Environment-Injected Memory Poisoning Attacks on Web Agents</strong></td>
         <td style="width: 15%;">

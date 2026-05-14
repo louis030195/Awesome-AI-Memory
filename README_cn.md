@@ -11,8 +11,8 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-396-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
-[![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-102-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
+[![Papers](https://img.shields.io/badge/Papers-398-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-103-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
 ## 👋 简介
@@ -6901,6 +6901,27 @@ Framework for Experience-Driven Agent Evolution</strong></td>
       <td><strong>标签</strong></td>
       <td><strong>链接</strong></td>
     </tr>
+    <tr>
+        <td rowspan="2" style="width: 15%;">2026-05-12</td>
+        <td style="width: 55%;"><strong>Beyond Similarity Search: Tenure and the Case for Structured Belief State in LLM Memory</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/System-darkblue" alt="System">
+          <img src="https://img.shields.io/badge/Model%20Architecture-indigo" alt="Model Architecture">
+          <img src="https://img.shields.io/badge/Memory%20Retrieval-magenta" alt="Memory Retrieval">
+          <img src="https://img.shields.io/badge/Long--Term%20Memory-gold" alt="Long-Term Memory">
+          <img src="https://img.shields.io/badge/Memory%20Framework-darkslategrey" alt="Memory Framework">
+        </td>
+        <td style="width: 15%;"><a href="https://arxiv.org/abs/2605.11325">
+          <img src="https://img.shields.io/badge/arXiv-Paper-%23D2691E?logo=arxiv" alt="Paper Badge">
+        </a></td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • 理论框架： 本文主张跨会话的大语言模型记忆本质上是一个状态管理问题，而非单纯的搜索问题。为此，我们提出了一种类型化信念模式，该模式包含五种信念类型、认识论状态以及版本化的取代机制；同时引入了 why_it_matters 字段，旨在将提取的事实转化为指令性的操作指引，而非仅仅是陈述性的事实记录.<br>
+          • 实验结果： 研究表明，在包含72个测试用例的检索套件中，基于稠密嵌入的余弦相似度方法的平均精度仅为 0.12；相比之下，结合硬范围隔离的别名加权 BM25 算法实现了 1.0 的精度，通过了全部 72 个测试用例。在多轮对话的话题漂移场景下，向量搜索在噪声敏感轮次中的漂移得分为 0.43–0.50，而 BM25 算法则始终保持为 0.0.<br>
+          • 系统实现与资源： 该系统以本地优先且兼容 OpenAI 接口的代理形式发布，能够透明地将精选的信念上下文注入到每一个大语言模型会话中。此外，我们还提供了一个可复用的、包含 72 个案例的基准测试集，涵盖别名解析、范围消歧、取代链排除以及会话级噪声隔离等关键任务.
+        </td>
+      </tr>
       <tr>
         <td rowspan="2" style="width: 15%;">2026-05-06</td>
         <td style="width: 55%;"><strong>Continual Knowledge Updating in LLM Systems: Learning Through Multi-Timescale Memory Dynamics</strong></td>

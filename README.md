@@ -1041,7 +1041,6 @@ Papers below are ordered by **publication date**:
           <img src="https://img.shields.io/badge/Unified-Memory-4A90E2" alt="Unified Memory">
           <img src="https://img.shields.io/badge/Semantic-Memory-F5A623" alt="Semantic Memory">
           <img src="https://img.shields.io/badge/Procedural-Memory-7ED321" alt="Procedural Memory">
-          <img src="https://img.shields.io/badge/Multi-Agent-Systems-D0021B" alt="Multi-Agent Systems">
         </td>
         <td style="width: 15%;">
           <a href="https://arxiv.org/pdf/2606.06787">

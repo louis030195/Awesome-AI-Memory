@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-473-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-474-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -7664,6 +7664,30 @@ Papers below are ordered by **publication date**:
           • Methodology: Proposes an "Agentic Memory" framework that maintains a single, human-readable, and evolving memory. This approach outperforms GPT-5 with 55% accuracy while being 16× more token-efficient (using 2k memory vs. 32k history).
         </td>
     </tr>
+    <tr>
+        <td rowspan="2" style="width: 15%;">2025-11-09</td>
+        <td style="width: 55%;"><strong>FlashAdventure — Long-Term Memory for GUI Agents</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/GUI%20Agents-4A90E2" alt="GUI Agents">
+          <img src="https://img.shields.io/badge/Long--Term%20Memory-F5A623" alt="Long-Term Memory">
+          <img src="https://img.shields.io/badge/Benchmark-7ED321" alt="Benchmark">
+          <img src="https://img.shields.io/badge/EMNLP%202025-D0021B" alt="EMNLP 2025">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://aclanthology.org/2025.emnlp-main.1192/">
+            <img src="https://img.shields.io/badge/Paper-EMNLP-D2691E?logo=paper" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • This paper introduces FlashAdventure, a benchmark for evaluating GUI agents on long-horizon, narrative-driven tasks requiring memory, planning, and interaction across complete story arcs. <br>
+          • It identifies the observation–behavior gap, where agents must recall earlier observations and apply them later when those memories become actionable. <br>
+          • The authors propose COAST (Clue-Oriented Agent for Sequential Tasks), an agent framework using long-term clue memory with a Seek-Map-Solve cycle to improve sequential decision-making. <br>
+          • The benchmark contains 34 Flash-based adventure games and evaluates agents through milestone-based automated scoring with CUA-as-a-Judge. <br>
+          • FlashAdventure demonstrates that explicit long-term memory enables GUI agents to better store, retrieve, and utilize historical information in long-horizon interactive environments.
+        </td>
+      </tr>
     <tr>
       <td rowspan="2" style="width: 15%;">2025-11-04</td>
       <td style="width: 55%;"><strong>Toward Multi-Session Personalized Conversation: A Large-Scale Dataset and Hierarchical Tree Framework for Implicit Reasoning</strong></td>

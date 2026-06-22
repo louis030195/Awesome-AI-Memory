@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-473-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-474-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -7664,6 +7664,30 @@ Framework for Experience-Driven Agent Evolution</strong></td>
           • 方法创新：提出了一种“代理记忆（Agentic Memory）”框架，该框架维护一个持续演进的、人类可读的单一记忆体。该方法以 16 倍的效率优势（仅使用 2k 记忆 token 对比 32k 历史记录）超越了 GPT-5，达到了 55% 的准确率。
         </td>
     </tr>
+    <tr>
+        <td rowspan="2" style="width: 15%;">2025-11-09</td>
+        <td style="width: 55%;"><strong>FlashAdventure — Long-Term Memory for GUI Agents</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/GUI%20Agents-4A90E2" alt="GUI Agents">
+          <img src="https://img.shields.io/badge/Long--Term%20Memory-F5A623" alt="Long-Term Memory">
+          <img src="https://img.shields.io/badge/Benchmark-7ED321" alt="Benchmark">
+          <img src="https://img.shields.io/badge/EMNLP%202025-D0021B" alt="EMNLP 2025">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://aclanthology.org/2025.emnlp-main.1192/">
+            <img src="https://img.shields.io/badge/Paper-EMNLP-D2691E?logo=paper" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • 本文介绍了 FlashAdventure，这是一个用于评估 GUI 智能体在长周期、叙事驱动任务中的基准测试，需要智能体在完整故事流程中进行记忆、规划和交互。 <br>
+          • 该研究发现了“观察–行为鸿沟”（observation–behavior gap），即智能体需要回忆早期观察到的信息，并在这些记忆未来变得可用时将其应用于后续行动。 <br>
+          • 作者提出了 COAST（Clue-Oriented Agent for Sequential Tasks，面向线索的序列任务智能体）框架，通过 Seek-Map-Solve 循环机制利用长期线索记忆，以提升序列决策能力。 <br>
+          • 该基准包含 34 个基于 Flash 的冒险游戏，并通过 CUA-as-a-Judge 基于里程碑的自动化评分方式对智能体进行评估。 <br>
+          • FlashAdventure 证明，显式的长期记忆机制能够帮助 GUI 智能体在长周期交互环境中更好地存储、检索和利用历史信息。
+        </td>
+      </tr>
     <tr>
       <td rowspan="2" style="width: 15%;">2025-11-04</td>
       <td style="width: 55%;"><strong>Toward Multi-Session Personalized Conversation: A Large-Scale Dataset and Hierarchical Tree Framework for Implicit Reasoning</strong></td>

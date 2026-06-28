@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-501-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-502-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -704,6 +704,28 @@ Papers below are ordered by **publication date**:
       <td><strong>Tags</strong></td>
       <td><strong>Links</strong></td>
     </tr>
+        <tr>
+          <td rowspan="2" style="width: 15%;">2026-06-25</td>
+          <td style="width: 55%;"><strong>DanceOPD: On-Policy Generative Field Distillation</strong></td>
+          <td style="width: 15%;">
+            <img src="https://img.shields.io/badge/Generative%20Field%20Distillation-4A90E2" alt="Generative Field Distillation">
+            <img src="https://img.shields.io/badge/Flow%20Matching-F5A623" alt="Flow Matching">
+            <img src="https://img.shields.io/badge/Image%20Generation-7ED321" alt="Image Generation">
+            <img src="https://img.shields.io/badge/Editing-D0021B" alt="Editing">
+          </td>
+          <td style="width: 15%;">
+            <a href="https://arxiv.org/pdf/2606.27377v1">
+              <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            • This paper introduces DanceOPD, an on-policy generative field distillation framework for flow-matching image generation models that aims to unify text-to-image generation, local editing, and global editing in one model.<br>
+            • Each capability source is formulated as a velocity field over a shared flow state space. During training, each sample is routed to one capability field, the student queries low-noise states induced by its own rollout, and learning uses a velocity MSE objective.<br>
+            • Experiments on text-to-image generation, editing, realism-field absorption, and classifier-free-guidance absorption show that DanceOPD improves multi-capability composition, strengthening target capabilities while preserving anchor generation quality.
+          </td>
+        </tr>
         <tr>
           <td rowspan="2" style="width: 15%;">2026-06-18</td>
           <td style="width: 55%;"><strong>Multi-Agent Transactive Memory</strong></td>

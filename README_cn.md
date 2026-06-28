@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-501-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-502-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -703,6 +703,28 @@ To systematically organize the diverse research and practical resources in the f
       <td><strong>论文与摘要</strong></td>
       <td><strong>标签</strong></td>
       <td><strong>链接</strong></td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="width: 15%;">2026-06-25</td>
+      <td style="width: 55%;"><strong>DanceOPD: On-Policy Generative Field Distillation</strong></td>
+      <td style="width: 15%;">
+        <img src="https://img.shields.io/badge/Generative%20Field%20Distillation-4A90E2" alt="Generative Field Distillation">
+        <img src="https://img.shields.io/badge/Flow%20Matching-F5A623" alt="Flow Matching">
+        <img src="https://img.shields.io/badge/Image%20Generation-7ED321" alt="Image Generation">
+        <img src="https://img.shields.io/badge/Editing-D0021B" alt="Editing">
+      </td>
+      <td style="width: 15%;">
+        <a href="https://arxiv.org/pdf/2606.27377v1">
+          <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        • 本文提出 DanceOPD，一个面向 flow-matching 图像生成模型的 on-policy generative field distillation 框架，目标是在单一模型中统一 text-to-image 生成、局部编辑和全局编辑能力。<br>
+        • 方法将每种能力源建模为共享 flow 状态空间上的 velocity field；训练时每个样本被路由到一个能力场，学生模型查询由自身 rollout 诱导的低噪声状态，并使用 velocity MSE 目标进行学习。<br>
+        • 在 text-to-image 生成、编辑、realism-field absorption 和 classifier-free-guidance absorption 上的实验表明，DanceOPD 改善了多能力组合，在增强目标能力的同时保持基础生成质量。
+      </td>
     </tr>
     <tr>
       <td rowspan="2" style="width: 15%;">2026-06-18</td>

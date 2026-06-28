@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-501-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-502-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -8688,6 +8688,28 @@ Framework for Experience-Driven Agent Evolution</strong></td>
           • 本文提出AtomMem，以高价值原子事实作为长期记忆的基本表示单位，试图在保存完整对话造成的冗余开销与过度摘要导致的细节损失之间取得平衡，并降低无约束记忆更新带来的内容漂移和不稳定性。<br>
           • 系统首先由Fact Executor从长篇交互中选择性提取独立、可验证且信息密度较高的事实，再将其组织为分层事件结构和时间画像：前者保留事件级情景关系，后者跟踪用户偏好、目标及属性随时间发生的动态变化。<br>
           • 检索阶段通过关联记忆图连接分散在不同事件与时间点的事实，以支持跨会话、多跳和时间推理；LoCoMo实验显示AtomMem在多类推理任务上取得领先结果，表明原子化表示需要与事件层次、时间演化和关联检索共同使用，单纯将记忆切分为更短文本并不足以形成稳定的长期记忆。
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-18</td>
+        <td style="width: 55%;"><strong>MobileForge: Annotation-Free Adaptation for Mobile GUI Agents with Hierarchical Feedback-Guided Policy Optimization</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Mobile%20GUI%20Agent-4A90E2" alt="Mobile GUI Agent">
+          <img src="https://img.shields.io/badge/Annotation--Free%20Adaptation-F5A623" alt="Annotation-Free Adaptation">
+          <img src="https://img.shields.io/badge/Policy%20Optimization-7ED321" alt="Policy Optimization">
+          <img src="https://img.shields.io/badge/Process%20Feedback-D0021B" alt="Process Feedback">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.19930v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • 本文提出 MobileForge，一个面向移动 GUI Agent 的无标注适配系统，用于应对目标 App 数量庞大、更新频繁且难以通过人工任务、演示或奖励标签覆盖的问题。<br>
+          • MobileForge 结合了 MobileGym 与 Hierarchical Feedback-Guided Policy Optimization（HiFPO）：前者基于真实移动应用交互进行任务生成和 rollout 评估，后者将轨迹结果、步骤级过程反馈和纠错提示转化为带提示上下文的步骤级 GRPO 更新。<br>
+          • 仅使用自动生成的无标注适配数据，MobileForge 将 Qwen3-VL-8B 在 AndroidWorld 上适配到 67.2% Pass@3；进一步得到的 ForgeOwl-8B 在 AndroidWorld 上达到 77.6% Pass@3，并在分布外 MobileWorld GUI-only 划分上取得 41.0% 成功率，展示了开放数据移动 GUI Agent 适配能力。
         </td>
       </tr>
       <tr>

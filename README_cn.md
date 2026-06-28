@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-501-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-502-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -8688,6 +8688,28 @@ Framework for Experience-Driven Agent Evolution</strong></td>
           • 本文提出AtomMem，以高价值原子事实作为长期记忆的基本表示单位，试图在保存完整对话造成的冗余开销与过度摘要导致的细节损失之间取得平衡，并降低无约束记忆更新带来的内容漂移和不稳定性。<br>
           • 系统首先由Fact Executor从长篇交互中选择性提取独立、可验证且信息密度较高的事实，再将其组织为分层事件结构和时间画像：前者保留事件级情景关系，后者跟踪用户偏好、目标及属性随时间发生的动态变化。<br>
           • 检索阶段通过关联记忆图连接分散在不同事件与时间点的事实，以支持跨会话、多跳和时间推理；LoCoMo实验显示AtomMem在多类推理任务上取得领先结果，表明原子化表示需要与事件层次、时间演化和关联检索共同使用，单纯将记忆切分为更短文本并不足以形成稳定的长期记忆。
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-18</td>
+        <td style="width: 55%;"><strong>MemGUI-Agent: An End-to-End Long-Horizon Mobile GUI Agent with Proactive Context Management</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Mobile%20GUI%20Agent-4A90E2" alt="Mobile GUI Agent">
+          <img src="https://img.shields.io/badge/Context%20Management-F5A623" alt="Context Management">
+          <img src="https://img.shields.io/badge/Long--Horizon%20Tasks-7ED321" alt="Long-Horizon Tasks">
+          <img src="https://img.shields.io/badge/Structured%20Memory-D0021B" alt="Structured Memory">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.19926v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • 本文面向长程移动 GUI 任务，关注 MLLM 智能体在多步骤和跨应用跳转中保留中间事实的能力；论文指出 ReAct 式提示会被动累积每一步记录，导致提示词膨胀并稀释关键跨应用事实。<br>
+          • MemGUI-Agent 基于 Context-as-Action（ConAct）构建，将上下文管理建模为与 UI 动作选择同源的一等公民动作；ConAct 不再追加原始历史，而是维护折叠动作历史、折叠 UI 状态和近期步骤记录三类结构化上下文字段。<br>
+          • 作者构建了包含 2,956 条轨迹且带完整 ConAct 标注的 MemGUI-3K，并训练得到 MemGUI-8B-SFT；该 8B 智能体在 MemGUI-Bench 上取得开放数据 8B 模型最佳表现，并能泛化到分布外的 MobileWorld 基准，说明主动上下文管理可以在不无限扩张历史记录的前提下提升长程 GUI 可靠性。
         </td>
       </tr>
       <tr>

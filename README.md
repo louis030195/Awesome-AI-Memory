@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-501-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-502-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -8686,6 +8686,28 @@ Papers below are ordered by **publication date**:
           • This paper introduces AtomMem, which adopts high-value atomic facts as the fundamental representational units of long-term memory. It seeks to balance the redundancy and overhead associated with preserving complete conversations against the loss of detail caused by excessive summarization, while mitigating the content drift and instability introduced by unconstrained memory updates.<br>
           • The system first employs a Fact Executor to selectively extract independent, verifiable, and information-dense facts from extended interactions, subsequently organizing them into hierarchical event structures and temporal profiles. The former preserve event-level episodic relationships, while the latter track dynamic changes in user preferences, goals, and attributes over time.<br>
           • During retrieval, an associative memory graph connects facts distributed across different events and time points to support cross-session, multi-hop, and temporal reasoning. Experiments on LoCoMo show that AtomMem achieves leading results across multiple reasoning categories, demonstrating that atomic representations must be integrated with event hierarchies, temporal evolution, and associative retrieval; merely partitioning memory into shorter text segments is insufficient to establish stable long-term memory.
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-18</td>
+        <td style="width: 55%;"><strong>MemGUI-Agent: An End-to-End Long-Horizon Mobile GUI Agent with Proactive Context Management</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Mobile%20GUI%20Agent-4A90E2" alt="Mobile GUI Agent">
+          <img src="https://img.shields.io/badge/Context%20Management-F5A623" alt="Context Management">
+          <img src="https://img.shields.io/badge/Long--Horizon%20Tasks-7ED321" alt="Long-Horizon Tasks">
+          <img src="https://img.shields.io/badge/Structured%20Memory-D0021B" alt="Structured Memory">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.19926v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • This paper targets long-horizon mobile GUI tasks where MLLM-based agents must retain intermediate facts across many steps and app transitions. It argues that ReAct-style prompting passively accumulates per-step records, causing prompt explosion and dilution of critical cross-app facts.<br>
+          • MemGUI-Agent is built on Context-as-Action (ConAct), which makes context management a first-class action emitted by the same policy that selects UI actions. Instead of appending raw history, ConAct maintains three structured context fields: folded action history, folded UI state, and recent step record.<br>
+          • The authors construct MemGUI-3K, a 2,956-trajectory dataset with full ConAct annotations, and train MemGUI-8B-SFT. The resulting 8B agent achieves the best open-data 8B performance on MemGUI-Bench and generalizes to the out-of-distribution MobileWorld benchmark, showing that proactive context management can improve long-horizon GUI reliability without unbounded history growth.
         </td>
       </tr>
       <tr>

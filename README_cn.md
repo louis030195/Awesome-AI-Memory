@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-501-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-502-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -703,6 +703,28 @@ To systematically organize the diverse research and practical resources in the f
       <td><strong>论文与摘要</strong></td>
       <td><strong>标签</strong></td>
       <td><strong>链接</strong></td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="width: 15%;">2026-06-18</td>
+      <td style="width: 55%;"><strong>Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention</strong></td>
+      <td style="width: 15%;">
+        <img src="https://img.shields.io/badge/Self--Attention-4A90E2" alt="Self-Attention">
+        <img src="https://img.shields.io/badge/Mixture--of--Experts-F5A623" alt="Mixture-of-Experts">
+        <img src="https://img.shields.io/badge/Grouped--Query%20Attention-7ED321" alt="Grouped-Query Attention">
+        <img src="https://img.shields.io/badge/Long%20Context-D0021B" alt="Long Context">
+      </td>
+      <td style="width: 15%;">
+        <a href="https://arxiv.org/pdf/2606.20945v2">
+          <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        • 本文提出 Grouped Query Experts（GQE），在 grouped-query attention 之上引入 mixture-of-experts 层，用于降低长上下文场景中密集 self-attention 的高昂计算成本。<br>
+        • 在每个 GQA group 内，路由器为每个 token 选择 k 个 query-head experts，而所有 key-value heads 保持密集且不变；该设计保留 GQA 的 KV cache 优势，同时根据 token 难度或信息量减少活跃 query head 计算。<br>
+        • 在 250M 参数规模、固定 30B token 训练预算下，GQE 在下游准确率上匹配全激活 GQA 基线，同时每个 token 仅激活一半 query heads，为更高效的长上下文处理提供了一条路径。
+      </td>
     </tr>
     <tr>
       <td rowspan="2" style="width: 15%;">2026-06-18</td>

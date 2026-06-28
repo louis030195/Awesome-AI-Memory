@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-501-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-502-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -8666,6 +8666,28 @@ Papers below are ordered by **publication date**:
       <td><strong>Tags</strong></td>
       <td><strong>Links</strong></td>
     </tr>
+      <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-24</td>
+        <td style="width: 55%;"><strong>DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Text--to--Video-4A90E2" alt="Text-to-Video">
+          <img src="https://img.shields.io/badge/Subject--Driven%20Generation-F5A623" alt="Subject-Driven Generation">
+          <img src="https://img.shields.io/badge/Open%20Domain-7ED321" alt="Open Domain">
+          <img src="https://img.shields.io/badge/Video%20Personalization-D0021B" alt="Video Personalization">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.26058v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • This paper studies open-domain subject-driven text-to-video generation, covering both in-domain scenarios that preserve reference-subject features and cross-domain scenarios that retain intrinsic subject identity while allowing style and domain attributes to change.<br>
+          • DomainShuttle introduces Domain-MoT to decouple video and reference features and uses domain-aware AdaLN for domain-specific modeling of reference images. It also proposes Video-Reference DualRoPE to place reference tokens and video tokens in separate RoPE spaces for subject-level spatial modeling.<br>
+          • A Cross-Pair Consistent Loss is used to extract intrinsic subject features that are less affected by irrelevant attributes. Experiments show improved subject fidelity and generative flexibility across open-domain video personalization scenarios.
+        </td>
+      </tr>
       <tr>
         <td rowspan="2" style="width: 15%;">2026-06-18</td>
         <td style="width: 55%;"><strong>AtomMem: Building Simple and Effective Memory System for LLM Agents via Atomic Facts</strong></td>

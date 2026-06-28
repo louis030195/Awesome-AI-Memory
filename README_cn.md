@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-501-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-502-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -8668,6 +8668,28 @@ Framework for Experience-Driven Agent Evolution</strong></td>
       <td><strong>标签</strong></td>
       <td><strong>链接</strong></td>
     </tr>
+      <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-24</td>
+        <td style="width: 55%;"><strong>DomainShuttle: Freeform Open Domain Subject-driven Text-to-video Generation</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Text--to--Video-4A90E2" alt="Text-to-Video">
+          <img src="https://img.shields.io/badge/Subject--Driven%20Generation-F5A623" alt="Subject-Driven Generation">
+          <img src="https://img.shields.io/badge/Open%20Domain-7ED321" alt="Open Domain">
+          <img src="https://img.shields.io/badge/Video%20Personalization-D0021B" alt="Video Personalization">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.26058v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • 本文研究开放域 subject-driven text-to-video 生成，同时覆盖尽量保留参考主体特征的域内场景，以及在保留主体内在身份的同时允许风格和领域属性变化的跨域场景。<br>
+          • DomainShuttle 引入 Domain-MoT 来解耦视频和参考特征，并使用 domain-aware AdaLN 对参考图像进行领域特定建模；同时提出 Video-Reference DualRoPE，将参考 token 和视频 token 放入不同 RoPE 空间，以实现主体级空间建模。<br>
+          • 方法通过 Cross-Pair Consistent Loss 提取较少受无关属性影响的主体内在特征；实验显示其在开放域视频个性化场景中同时提升了主体保真度和生成灵活性。
+        </td>
+      </tr>
       <tr>
         <td rowspan="2" style="width: 15%;">2026-06-18</td>
         <td style="width: 55%;"><strong>AtomMem: Building Simple and Effective Memory System for LLM Agents via Atomic Facts</strong></td>

@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-501-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-502-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -7169,6 +7169,28 @@ Framework for Experience-Driven Agent Evolution</strong></td>
       <td><strong>标签</strong></td>
       <td><strong>链接</strong></td>
     </tr>
+      <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-23</td>
+        <td style="width: 55%;"><strong>NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Coding%20Agents-4A90E2" alt="Coding Agents">
+          <img src="https://img.shields.io/badge/Scientific%20Benchmark-F5A623" alt="Scientific Benchmark">
+          <img src="https://img.shields.io/badge/NatureGym-7ED321" alt="NatureGym">
+          <img src="https://img.shields.io/badge/Reproduction-D0021B" alt="Reproduction">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.24530v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • 本文提出 NatureBench，一个从 Nature 系列同行评审论文中提炼出的跨学科基准，包含 90 个任务，用于评估 coding agent 是否能够在真实科学问题上从复现走向发现。<br>
+          • NatureBench 基于 NatureGym 构建，后者能够从源论文自动生成标准化的逐任务容器化环境，缓解以往科研智能体基准中环境碎片化导致的可信度问题。<br>
+          • 在严格禁用网页搜索的协议下，论文评估了十种前沿 agent 配置；最强模型在 g&gt;0.1 标准下仅有 17.8% 的任务超过论文 SOTA，失败主要来自方法选择错误和计算预算不足，而不是任务理解失败。
+        </td>
+      </tr>
       <tr>
         <td rowspan="2" style="width: 15%;">2026-06-17</td>
         <td style="width: 55%;"><strong>LegalWorld: A Life-Cycle Interactive Environment for Legal Agents</strong></td>

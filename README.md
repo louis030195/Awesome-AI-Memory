@@ -11,7 +11,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/badge/PRs-Welcome-red)
-[![Papers](https://img.shields.io/badge/Papers-501-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
+[![Papers](https://img.shields.io/badge/Papers-502-blue.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/papers)
 [![Open Source Projects](https://img.shields.io/badge/Open%20Source%20Projects-107-green.svg)](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects)
 
 
@@ -7167,6 +7167,28 @@ Papers below are ordered by **publication date**:
       <td><strong>Tags</strong></td>
       <td><strong>Links</strong></td>
     </tr>
+     <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-23</td>
+        <td style="width: 55%;"><strong>NatureBench: Can Coding Agents Match the Published SOTA of Nature-Family Papers?</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Coding%20Agents-4A90E2" alt="Coding Agents">
+          <img src="https://img.shields.io/badge/Scientific%20Benchmark-F5A623" alt="Scientific Benchmark">
+          <img src="https://img.shields.io/badge/NatureGym-7ED321" alt="NatureGym">
+          <img src="https://img.shields.io/badge/Reproduction-D0021B" alt="Reproduction">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.24530v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • This paper introduces NatureBench, a cross-discipline benchmark of 90 tasks distilled from peer-reviewed Nature-family publications to evaluate whether coding agents can move beyond reproduction toward discovery on real scientific problems.<br>
+          • NatureBench is built on NatureGym, an automated pipeline that constructs standardized per-task containerized environments from source papers, addressing the environment-fragmentation problem in prior agent-on-research benchmarks.<br>
+          • Under a strict web-search-disabled protocol, ten frontier agent configurations are evaluated. The strongest model surpasses published SOTA on only 17.8% of tasks under the g&gt;0.1 criterion, with failures mainly caused by wrong method choices and insufficient compute budgets rather than task misunderstanding.
+        </td>
+      </tr>
      <tr>
         <td rowspan="2" style="width: 15%;">2026-06-17</td>
         <td style="width: 55%;"><strong>LegalWorld: A Life-Cycle Interactive Environment for Legal Agents</strong></td>

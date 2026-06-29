@@ -240,6 +240,28 @@ To systematically organize the diverse research and practical resources in the f
       <td><strong>链接</strong></td>
     </tr>
     <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-23</td>
+        <td style="width: 55%;"><strong>Are We Ready For An Agent-Native Memory System?</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Agent%20Memory-blue" alt="Agent Memory">
+          <img src="https://img.shields.io/badge/Memory%20System-green" alt="Memory System">
+          <img src="https://img.shields.io/badge/Evaluation-orange" alt="Evaluation">
+          <img src="https://img.shields.io/badge/Data%20Management-purple" alt="Data Management">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.24775v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-%23D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • 本文从数据管理视角研究 Agent Memory，指出面向 LLM Agent 的记忆不应只被视作检索增强组件，而应作为支持持久化存储、检索、更新、整合与生命周期治理的系统来评估。<br>
+          • 论文将 Agent 原生记忆系统拆解为四个模块：表示与存储、提取、检索与路由、维护，并在这一框架下评估了 12 个代表性记忆系统和 2 个基线，覆盖 5 类基准工作负载与 11 个数据集。<br>
+          • 实验表明不存在一种在所有场景下都占优的记忆架构，效果高度依赖记忆结构与工作负载瓶颈的匹配；细粒度消融进一步量化了表示保真度、检索精度、更新正确性和长程稳定性等因素，成本分析也显示局部维护通常比全局重组更高效。
+        </td>
+      </tr>
+    <tr>
         <td rowspan="2" style="width: 15%;">2026-06-10</td>
         <td style="width: 55%;"><strong>Agentic Environment Engineering for Large Language Models: A Survey of Environment Modeling, Synthesis, Evaluation, and Application</strong></td>
         <td style="width: 15%;">
@@ -8691,25 +8713,25 @@ Framework for Experience-Driven Agent Evolution</strong></td>
         </td>
       </tr>
       <tr>
-        <td rowspan="2" style="width: 15%;">2026-06-18</td>
-        <td style="width: 55%;"><strong>MemGUI-Agent: An End-to-End Long-Horizon Mobile GUI Agent with Proactive Context Management</strong></td>
+        <td rowspan="2" style="width: 15%;">2026-06-17</td>
+        <td style="width: 55%;"><strong>OpenRath: Session-Centered Runtime State for Agent Systems</strong></td>
         <td style="width: 15%;">
-          <img src="https://img.shields.io/badge/Mobile%20GUI%20Agent-4A90E2" alt="Mobile GUI Agent">
-          <img src="https://img.shields.io/badge/Context%20Management-F5A623" alt="Context Management">
-          <img src="https://img.shields.io/badge/Long--Horizon%20Tasks-7ED321" alt="Long-Horizon Tasks">
-          <img src="https://img.shields.io/badge/Structured%20Memory-D0021B" alt="Structured Memory">
+          <img src="https://img.shields.io/badge/Agent%20Runtime-4A90E2" alt="Agent Runtime">
+          <img src="https://img.shields.io/badge/Session%20State-F5A623" alt="Session State">
+          <img src="https://img.shields.io/badge/Replay-7ED321" alt="Replay">
+          <img src="https://img.shields.io/badge/Memory%20Events-D0021B" alt="Memory Events">
         </td>
         <td style="width: 15%;">
-          <a href="https://arxiv.org/pdf/2606.19926v1">
+          <a href="https://arxiv.org/pdf/2606.19409v1">
             <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
           </a>
         </td>
       </tr>
       <tr>
         <td colspan="3">
-          • 本文面向长程移动 GUI 任务，关注 MLLM 智能体在多步骤和跨应用跳转中保留中间事实的能力；论文指出 ReAct 式提示会被动累积每一步记录，导致提示词膨胀并稀释关键跨应用事实。<br>
-          • MemGUI-Agent 基于 Context-as-Action（ConAct）构建，将上下文管理建模为与 UI 动作选择同源的一等公民动作；ConAct 不再追加原始历史，而是维护折叠动作历史、折叠 UI 状态和近期步骤记录三类结构化上下文字段。<br>
-          • 作者构建了包含 2,956 条轨迹且带完整 ConAct 标注的 MemGUI-3K，并训练得到 MemGUI-8B-SFT；该 8B 智能体在 MemGUI-Bench 上取得开放数据 8B 模型最佳表现，并能泛化到分布外的 MobileWorld 基准，说明主动上下文管理可以在不无限扩张历史记录的前提下提升长程 GUI 可靠性。
+          • 本文针对现代 Agent 系统中的运行时状态碎片化问题展开研究：对话记录、工具效果、记忆事件、工作区位置、分支来源与重放证据往往分散记录，导致系统难以检查和复现。<br>
+          • OpenRath 提出类似 PyTorch 的编程模型，其核心抽象是在线程、代理和工作流之间传递的一等公民 Session 值；Session 支持分支、检查、重放、后端感知与组合，并携带对话片段、沙箱位置、血缘元数据、token 用量、待处理任务、工具证据以及记忆交互的运行时记录。<br>
+          • 通过将 fork、merge 和 replay 显式建模为运行时操作，并定义 Sandbox、Tool、Agent、Memory、Workflow 与 Selector 等组件，OpenRath 为多代理、多会话系统提供了可审计的组合模型；论文主要验证受控运行时属性，开放服务质量和记忆质量评估留待后续工作。
         </td>
       </tr>
       <tr>
@@ -10035,6 +10057,7 @@ Framework for Experience-Driven Agent Evolution</strong></td>
 | Agent Brain | 2024-12-01 | ![GitHub Repo stars](https://img.shields.io/github/stars/kaderosio/agent-brain?style=social) | https://github.com/kaderosio/agent-brain<br>No official website |
 | Puppyone    | 2024-12-06 | ![GitHub Repo stars](https://img.shields.io/github/stars/puppyone-ai/puppyone?style=social) | https://github.com/puppyone-ai/puppyone<br>https://www.puppyone.ai/ |
 | LangMem     | 2025-01-22 | ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/langmem?style=social) | https://github.com/langchain-ai/langmem<br>https://langchain-ai.github.io/langmem/ |
+| Vestige     | 2025-01-25 | ![GitHub Repo stars](https://img.shields.io/github/stars/samvallad33/vestige?style=social) | https://github.com/samvallad33/vestige<br>https://samvallad33.github.io/vestige/ |
 | A-Mem       | 2025-02-17 | ![GitHub Repo stars](https://img.shields.io/github/stars/agiresearch/A-mem?style=social) | https://github.com/agiresearch/A-mem <br>No official website |
 | Mirix       | 2025-04-16 | ![GitHub Repo stars](https://img.shields.io/github/stars/Mirix-AI/MIRIX?style=social) | https://github.com/Mirix-AI/MIRIX<br>https://mirix.io/ |
 | MemEngine   | 2025-05-04 | ![GitHub Repo stars](https://img.shields.io/github/stars/nuster1128/MemEngine?style=social) | https://github.com/nuster1128/MemEngine<br>No official website |
@@ -10072,6 +10095,7 @@ Framework for Experience-Driven Agent Evolution</strong></td>
 | Origin | 2026-04-19 | ![GitHub Repo stars](https://img.shields.io/github/stars/7xuanlu/origin?style=social) | https://github.com/7xuanlu/origin<br>https://useorigin.app |
 | Omnigraph | 2026-04-22 | ![GitHub Repo stars](https://img.shields.io/github/stars/ModernRelay/omnigraph?style=social) | https://github.com/ModernRelay/omnigraph<br>No official website |
 | Mnemory | 2026-05-03 | ![GitHub Repo stars](https://img.shields.io/github/stars/fpytloun/mnemory?style=social) | https://github.com/fpytloun/mnemory<br>No official website |
+| kaeru | 2026-05-08 | ![GitHub Repo stars](https://img.shields.io/github/stars/LamantinAI/kaeru?style=social) | https://github.com/LamantinAI/kaeru<br>No official website |
 | Dakera | 2026-05-12 | ![GitHub Repo stars](https://img.shields.io/github/stars/dakera-ai/dakera-mcp?style=social) | https://github.com/dakera-ai/dakera-mcp<br>https://dakera.ai/ |
 | Perseus | 2026-05-18 | ![GitHub Repo stars](https://img.shields.io/github/stars/tcconnally/perseus?style=social) | https://github.com/tcconnally/perseus<br>https://perseus.observer/ |
 | Agentic Task System | 2026-05-29 | ![GitHub Repo stars](https://img.shields.io/github/stars/renezander030/agentic-task-system?style=social) | https://github.com/renezander030/agentic-task-system<br>https://www.npmjs.com/package/@reneza/ats-cli |

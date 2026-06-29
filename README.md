@@ -240,6 +240,28 @@ Papers below are ordered by **publication date**:
       <td><strong>Links</strong></td>
     </tr>
       <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-23</td>
+        <td style="width: 55%;"><strong>Are We Ready For An Agent-Native Memory System?</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Agent%20Memory-blue" alt="Agent Memory">
+          <img src="https://img.shields.io/badge/Memory%20System-green" alt="Memory System">
+          <img src="https://img.shields.io/badge/Evaluation-orange" alt="Evaluation">
+          <img src="https://img.shields.io/badge/Data%20Management-purple" alt="Data Management">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.24775v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-%23D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • This paper studies agent memory from a data-management perspective, arguing that memory for LLM agents should be evaluated as a system supporting persistent storage, retrieval, update, consolidation, and lifecycle governance rather than as a monolithic retrieval add-on.<br>
+          • It decomposes an agent-native memory system into four modules: representation and storage, extraction, retrieval and routing, and maintenance. Under this framework, the authors evaluate 12 representative memory systems and two baselines across five benchmark workloads spanning 11 datasets.<br>
+          • The experiments show that no single memory architecture dominates across all settings; effectiveness depends on the alignment between memory structure and workload bottlenecks. Fine-grained ablations quantify effects on representation fidelity, retrieval precision, update correctness, and long-horizon stability, while cost analysis shows that localized maintenance can be more efficient than global reorganization.
+        </td>
+      </tr>
+      <tr>
         <td rowspan="2" style="width: 15%;">2026-06-10</td>
         <td style="width: 55%;"><strong>Agentic Environment Engineering for Large Language Models: A Survey of Environment Modeling, Synthesis, Evaluation, and Application</strong></td>
         <td style="width: 15%;">
@@ -8689,25 +8711,25 @@ Papers below are ordered by **publication date**:
         </td>
       </tr>
       <tr>
-        <td rowspan="2" style="width: 15%;">2026-06-18</td>
-        <td style="width: 55%;"><strong>MemGUI-Agent: An End-to-End Long-Horizon Mobile GUI Agent with Proactive Context Management</strong></td>
+        <td rowspan="2" style="width: 15%;">2026-06-17</td>
+        <td style="width: 55%;"><strong>OpenRath: Session-Centered Runtime State for Agent Systems</strong></td>
         <td style="width: 15%;">
-          <img src="https://img.shields.io/badge/Mobile%20GUI%20Agent-4A90E2" alt="Mobile GUI Agent">
-          <img src="https://img.shields.io/badge/Context%20Management-F5A623" alt="Context Management">
-          <img src="https://img.shields.io/badge/Long--Horizon%20Tasks-7ED321" alt="Long-Horizon Tasks">
-          <img src="https://img.shields.io/badge/Structured%20Memory-D0021B" alt="Structured Memory">
+          <img src="https://img.shields.io/badge/Agent%20Runtime-4A90E2" alt="Agent Runtime">
+          <img src="https://img.shields.io/badge/Session%20State-F5A623" alt="Session State">
+          <img src="https://img.shields.io/badge/Replay-7ED321" alt="Replay">
+          <img src="https://img.shields.io/badge/Memory%20Events-D0021B" alt="Memory Events">
         </td>
         <td style="width: 15%;">
-          <a href="https://arxiv.org/pdf/2606.19926v1">
+          <a href="https://arxiv.org/pdf/2606.19409v1">
             <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
           </a>
         </td>
       </tr>
       <tr>
         <td colspan="3">
-          • This paper targets long-horizon mobile GUI tasks where MLLM-based agents must retain intermediate facts across many steps and app transitions. It argues that ReAct-style prompting passively accumulates per-step records, causing prompt explosion and dilution of critical cross-app facts.<br>
-          • MemGUI-Agent is built on Context-as-Action (ConAct), which makes context management a first-class action emitted by the same policy that selects UI actions. Instead of appending raw history, ConAct maintains three structured context fields: folded action history, folded UI state, and recent step record.<br>
-          • The authors construct MemGUI-3K, a 2,956-trajectory dataset with full ConAct annotations, and train MemGUI-8B-SFT. The resulting 8B agent achieves the best open-data 8B performance on MemGUI-Bench and generalizes to the out-of-distribution MobileWorld benchmark, showing that proactive context management can improve long-horizon GUI reliability without unbounded history growth.
+          • This paper addresses fragmented runtime state in modern agent systems, where transcripts, tool effects, memory events, workspace placement, branch provenance, and replay evidence are often recorded separately and become difficult to inspect or reproduce.<br>
+          • OpenRath introduces a PyTorch-like programming model whose central abstraction is a first-class Session value passed between agents and workflows. A Session is branchable, inspectable, replayable, backend-aware, and composable, carrying conversation chunks, sandbox placement, lineage metadata, token usage, pending work, tool evidence, and the runtime record of memory interactions.<br>
+          • By making fork, merge, and replay explicit runtime operations, and by defining Sandbox, Tool, Agent, Memory, Workflow, and Selector components, OpenRath provides an auditable composition model for multi-agent, multi-session systems. The report focuses on controlled runtime properties, leaving broader live-provider quality and memory-quality evaluation to follow-on work.
         </td>
       </tr>
       <tr>
@@ -10053,6 +10075,7 @@ Systems below are ordered by **publication date**:
 | Agent Brain | 2024-12-01 | ![GitHub Repo stars](https://img.shields.io/github/stars/kaderosio/agent-brain?style=social) | https://github.com/kaderosio/agent-brain<br>No official website |
 | Puppyone    | 2024-12-06 | ![GitHub Repo stars](https://img.shields.io/github/stars/puppyone-ai/puppyone?style=social) | https://github.com/puppyone-ai/puppyone<br>https://www.puppyone.ai/ |
 | LangMem     | 2025-01-22 | ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/langmem?style=social) | https://github.com/langchain-ai/langmem<br>https://langchain-ai.github.io/langmem/ |
+| Vestige     | 2025-01-25 | ![GitHub Repo stars](https://img.shields.io/github/stars/samvallad33/vestige?style=social) | https://github.com/samvallad33/vestige<br>https://samvallad33.github.io/vestige/ |
 | A-Mem       | 2025-02-17 | ![GitHub Repo stars](https://img.shields.io/github/stars/agiresearch/A-mem?style=social) | https://github.com/agiresearch/A-mem <br>No official website |
 | Mirix       | 2025-04-16 | ![GitHub Repo stars](https://img.shields.io/github/stars/Mirix-AI/MIRIX?style=social) | https://github.com/Mirix-AI/MIRIX<br>https://mirix.io/ |
 | MemEngine   | 2025-05-04 | ![GitHub Repo stars](https://img.shields.io/github/stars/nuster1128/MemEngine?style=social) | https://github.com/nuster1128/MemEngine<br>No official website |
@@ -10090,6 +10113,7 @@ Systems below are ordered by **publication date**:
 | Origin | 2026-04-19 | ![GitHub Repo stars](https://img.shields.io/github/stars/7xuanlu/origin?style=social) | https://github.com/7xuanlu/origin<br>https://useorigin.app |
 | Omnigraph | 2026-04-22 | ![GitHub Repo stars](https://img.shields.io/github/stars/ModernRelay/omnigraph?style=social) | https://github.com/ModernRelay/omnigraph<br>No official website |
 | Mnemory | 2026-05-03 | ![GitHub Repo stars](https://img.shields.io/github/stars/fpytloun/mnemory?style=social) | https://github.com/fpytloun/mnemory<br>No official website |
+| kaeru | 2026-05-08 | ![GitHub Repo stars](https://img.shields.io/github/stars/LamantinAI/kaeru?style=social) | https://github.com/LamantinAI/kaeru<br>No official website |
 | Dakera | 2026-05-12 | ![GitHub Repo stars](https://img.shields.io/github/stars/dakera-ai/dakera-mcp?style=social) | https://github.com/dakera-ai/dakera-mcp<br>https://dakera.ai/ |
 | Perseus | 2026-05-18 | ![GitHub Repo stars](https://img.shields.io/github/stars/tcconnally/perseus?style=social) | https://github.com/tcconnally/perseus<br>https://perseus.observer/ |
 | Agentic Task System | 2026-05-29 | ![GitHub Repo stars](https://img.shields.io/github/stars/renezander030/agentic-task-system?style=social) | https://github.com/renezander030/agentic-task-system<br>https://www.npmjs.com/package/@reneza/ats-cli |

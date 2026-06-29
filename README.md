@@ -8711,6 +8711,28 @@ Papers below are ordered by **publication date**:
         </td>
       </tr>
       <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-17</td>
+        <td style="width: 55%;"><strong>OpenRath: Session-Centered Runtime State for Agent Systems</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Agent%20Runtime-4A90E2" alt="Agent Runtime">
+          <img src="https://img.shields.io/badge/Session%20State-F5A623" alt="Session State">
+          <img src="https://img.shields.io/badge/Replay-7ED321" alt="Replay">
+          <img src="https://img.shields.io/badge/Memory%20Events-D0021B" alt="Memory Events">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.19409v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • This paper addresses fragmented runtime state in modern agent systems, where transcripts, tool effects, memory events, workspace placement, branch provenance, and replay evidence are often recorded separately and become difficult to inspect or reproduce.<br>
+          • OpenRath introduces a PyTorch-like programming model whose central abstraction is a first-class Session value passed between agents and workflows. A Session is branchable, inspectable, replayable, backend-aware, and composable, carrying conversation chunks, sandbox placement, lineage metadata, token usage, pending work, tool evidence, and the runtime record of memory interactions.<br>
+          • By making fork, merge, and replay explicit runtime operations, and by defining Sandbox, Tool, Agent, Memory, Workflow, and Selector components, OpenRath provides an auditable composition model for multi-agent, multi-session systems. The report focuses on controlled runtime properties, leaving broader live-provider quality and memory-quality evaluation to follow-on work.
+        </td>
+      </tr>
+      <tr>
         <td rowspan="2" style="width: 15%;">2026-06-16</td>
         <td style="width: 55%;"><strong>FinAcumen: Financial Multimodal Reasoning via Self-Evolving Experience Memory Harness</strong></td>
         <td style="width: 15%;">

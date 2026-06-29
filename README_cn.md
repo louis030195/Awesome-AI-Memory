@@ -8713,6 +8713,28 @@ Framework for Experience-Driven Agent Evolution</strong></td>
         </td>
       </tr>
       <tr>
+        <td rowspan="2" style="width: 15%;">2026-06-17</td>
+        <td style="width: 55%;"><strong>OpenRath: Session-Centered Runtime State for Agent Systems</strong></td>
+        <td style="width: 15%;">
+          <img src="https://img.shields.io/badge/Agent%20Runtime-4A90E2" alt="Agent Runtime">
+          <img src="https://img.shields.io/badge/Session%20State-F5A623" alt="Session State">
+          <img src="https://img.shields.io/badge/Replay-7ED321" alt="Replay">
+          <img src="https://img.shields.io/badge/Memory%20Events-D0021B" alt="Memory Events">
+        </td>
+        <td style="width: 15%;">
+          <a href="https://arxiv.org/pdf/2606.19409v1">
+            <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          • 本文针对现代 Agent 系统中的运行时状态碎片化问题展开研究：对话记录、工具效果、记忆事件、工作区位置、分支来源与重放证据往往分散记录，导致系统难以检查和复现。<br>
+          • OpenRath 提出类似 PyTorch 的编程模型，其核心抽象是在线程、代理和工作流之间传递的一等公民 Session 值；Session 支持分支、检查、重放、后端感知与组合，并携带对话片段、沙箱位置、血缘元数据、token 用量、待处理任务、工具证据以及记忆交互的运行时记录。<br>
+          • 通过将 fork、merge 和 replay 显式建模为运行时操作，并定义 Sandbox、Tool、Agent、Memory、Workflow 与 Selector 等组件，OpenRath 为多代理、多会话系统提供了可审计的组合模型；论文主要验证受控运行时属性，开放服务质量和记忆质量评估留待后续工作。
+        </td>
+      </tr>
+      <tr>
         <td rowspan="2" style="width: 15%;">2026-06-16</td>
         <td style="width: 55%;"><strong>FinAcumen: Financial Multimodal Reasoning via Self-Evolving Experience Memory Harness</strong></td>
         <td style="width: 15%;">

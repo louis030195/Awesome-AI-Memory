@@ -750,6 +750,28 @@ Papers below are ordered by **publication date**:
         </tr>
         <tr>
           <td rowspan="2" style="width: 15%;">2026-06-18</td>
+          <td style="width: 55%;"><strong>Grouped Query Experts: Mixture-of-Experts on GQA Self-Attention</strong></td>
+          <td style="width: 15%;">
+            <img src="https://img.shields.io/badge/Self--Attention-4A90E2" alt="Self-Attention">
+            <img src="https://img.shields.io/badge/Mixture--of--Experts-F5A623" alt="Mixture-of-Experts">
+            <img src="https://img.shields.io/badge/Grouped--Query%20Attention-7ED321" alt="Grouped-Query Attention">
+            <img src="https://img.shields.io/badge/Long%20Context-D0021B" alt="Long Context">
+          </td>
+          <td style="width: 15%;">
+            <a href="https://arxiv.org/pdf/2606.20945v2">
+              <img src="https://img.shields.io/badge/arXiv-Paper-D2691E?logo=arxiv" alt="Paper Badge">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            • This paper proposes Grouped Query Experts (GQE), a mixture-of-experts layer on top of grouped-query attention that targets the high cost of dense self-attention at long context lengths.<br>
+            • Within each GQA group, a router selects k query-head experts per token while leaving all key-value heads dense and unchanged. This preserves the KV-cache advantages of GQA while reducing active query-head computation according to token difficulty or information content.<br>
+            • On a fixed 30B token budget at the 250M parameter scale, GQE matches the downstream accuracy of an all-active GQA baseline while activating only half of the query heads per token, suggesting a path to more efficient long-context processing.
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" style="width: 15%;">2026-06-18</td>
           <td style="width: 55%;"><strong>Multi-Agent Transactive Memory</strong></td>
           <td style="width: 15%;">
             <img src="https://img.shields.io/badge/Multi%20Agent%20Systems-4A90E2" alt="Multi-Agent Systems">
